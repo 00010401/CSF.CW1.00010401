@@ -42,8 +42,8 @@ name_age = {
 for key, value in name_age.items():    #in this for loop "name_age.items()" -- will iterate the key-value pairs.
     print(key, value)
 
-
     
+
 #zip function    
 #combining list and tuple into a tuple of tuples, using zip function
 fruits = ['strawberry', 'raspberry', 'blueberry']    #this is a list
@@ -53,3 +53,20 @@ def fruits_color(fruits, color):
     fruits_color = tuple(zip(fruits, color))         #zip function is used in order to combine a tuple and a list
     return fruits_color
 print(fruits_color(fruits, color))                   #the result will be in the form of "tuple of tuples"
+
+
+
+#enumerating a list of tuples
+animals_height = [                                  #a list of tuples
+    ('rabbit', '20cm'),
+    ('bear', '120cm'),
+    ('giraffe', '550cm'),
+    ('lion', '120cm')
+]
+                                                    #enumerate function -- will return an enumerate object; it'll make iteration.
+for index, value in enumerate(animals_height):      #using for loop to refer values and indices;
+    animals_name = value[0]                         #this will get the value corresponding to the given indices from tuples.
+    height = value[1]                               #in this case, it gets a value of first index (height) from each tuple.
+    print("animals`s name: %s, animal`s height: %s" % (animals_name, height))           #this will print the made iteration of list of tuples.
+                                                    # %s -- used for formatting an object. (animal`s name and height)
+    
