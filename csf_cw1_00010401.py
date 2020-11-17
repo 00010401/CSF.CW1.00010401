@@ -31,3 +31,13 @@ print(name_age)
 
 name_age['Megan'] = 28     #this will change the value of 'Megan' key.
 print(name_age)
+
+
+#Dictionary + Items method. items method -- in dictionaries will return the answer in form of multiple tuples.
+name_age = {
+    'Toby': 30,         # this is called key-value pair
+    'Ralph': 8,         #where name is a key, and age is value
+    'Megan': 35
+}
+for key, value in name_age.items():    #in this for loop "name_age.items()" -- will iterate the key-value pairs.
+    print(key, value)
