@@ -9,3 +9,10 @@ print(l1)
 
 l1[2] = 'fifteen'
 print(l1)
+
+
+#Tuple. Unlike lists, tuples are immutable, meaning that we cannot change its values.
+
+t45 = ('bee', 'giraffe', 'horse', 'penguin')
+print(t45)
+#t45[2] = 'dolphin'   -- if you do like this, it will show error.
