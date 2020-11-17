@@ -41,3 +41,15 @@ name_age = {
 }
 for key, value in name_age.items():    #in this for loop "name_age.items()" -- will iterate the key-value pairs.
     print(key, value)
+
+
+    
+#zip function    
+#combining list and tuple into a tuple of tuples, using zip function
+fruits = ['strawberry', 'raspberry', 'blueberry']    #this is a list
+color = ('red', 'pink', 'purple')                    #this is a tuple
+
+def fruits_color(fruits, color):
+    fruits_color = tuple(zip(fruits, color))         #zip function is used in order to combine a tuple and a list
+    return fruits_color
+print(fruits_color(fruits, color))                   #the result will be in the form of "tuple of tuples"
